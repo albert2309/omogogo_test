@@ -1,0 +1,96 @@
+{
+  "id": "1200",
+  "title": "Suspendisse pellentesque ligula ut",
+  "description": "Duis placerat nibh nec feugiat scelerisque. Nulla non tempor lorem, ac fermentum urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  "due": "2019-04-07T18:54:18.133472Z",
+  "status": "Todo/Doing/Done",
+  "date_created": "2019-04-07T18:54:18.133472Z",
+  "date_modified": "2019-04-07T18:54:18.133472Z",
+  //NOTE: Only staffs who have role as a contributor or owner that can work on the to-do list.
+  "members": [
+    {
+      "id": "SF1",
+      "name": "Jonathan",
+      "role": "Owner"
+    },
+    {
+      "id": "SF2",
+      "name": "Bryan",
+      "role": "Contributor"
+    },
+    {
+      "id": "SF3",
+      "name": "Beatrice",
+      "role": "Reader"
+    }
+  ],
+  "tags": [
+    {
+      "id": "tag-1",
+      "label": "lorem"
+    },
+    {
+      "id": "tag-2",
+      "label": "ipsum"
+    }
+  ]
+}
+
+
+//Tags (Useful for searching to-do lists and sub-points) :
+[
+  {
+    "id": "tag-1",
+    "category": "question",
+    "posts": [
+      "1200",
+      "1400"
+    ]
+  }
+]
+
+//Staffs working on To-do List (To keep tracks the staffs who are working on the to-do list):
+//I only list down the todolist that each member work as a contributor or owner not the reader because anyone can be the reader of to-do list
+[
+  {
+    "id": "SF1",
+    "name": "Jonathan",
+    "todo": [
+      {
+        "postid": "1200",
+        "role": "Owner"
+      },
+      {
+        "postid": "1600",
+        "role": "Contributor"
+      }
+    ]
+  },
+  {
+    "id": "SF2",
+    "name": "Bryan",
+    "todo": [
+      {
+        "postid": "1200",
+        "role": "Contributor"
+      }
+    ]
+  },
+  {
+    "id": "SF3",
+    "name": "Beatrice"
+  }
+]
+
+
+//Points in to do list. This is used to create a sub-level of todolist just like in Workflowy:
+//Decided to remove tag because that would be too tedious
+{
+  "id": "1400",
+  "parentPostId": "123456789",
+  "content": "Duis placerat nibh nec feugiat scelerisque. Nulla non tempor lorem, ac fermentum urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "due": "2019-04-07T18:54:18.133472Z",
+  "status": "Todo/Doing/Done",
+  "date_created": "2019-04-07T18:54:18.133472Z",
+  "date_modified": "2019-04-07T18:54:18.133472Z",
+}
